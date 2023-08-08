@@ -2,6 +2,7 @@
 	"name": "solidjs-code-snippets",
 	"displayName": "SolidJS Code Snippets",
 	"description": "Code snippets for SolidJS in JavaScript and TypeScript",
+	"publisher": "junsantilla",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.81.0"
