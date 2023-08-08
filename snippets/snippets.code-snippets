@@ -1,0 +1,112 @@
+{
+	"createSignal": {
+		"prefix": "sscsig",
+		"body": "const [$1, set$1] = createSignal($2);",
+		"description": "Create a signal"
+	},
+	"createEffect": {
+		"prefix": "ssceff",
+		"body": "createEffect(() => {\n\t$0\n});",
+		"description": "Create a reactive effect"
+	},
+	"createMemo": {
+		"prefix": "sscemo",
+		"body": "const $1 = createMemo(() => {\n\treturn $0;\n});",
+		"description": "Create a memoized value"
+	},
+	"createResource": {
+		"prefix": "sscrsrc",
+		"body": "const $1 = createResource(() => {\n\treturn $0;\n});",
+		"description": "Create a resource"
+	},
+	"onMount": {
+		"prefix": "ssomnt",
+		"body": "onMount(() => {\n\t$0\n});",
+		"description": "Lifecycle hook: on mount"
+	},
+	"onCleanup": {
+		"prefix": "ssocln",
+		"body": "onCleanup(() => {\n\t$0\n});",
+		"description": "Lifecycle hook: on cleanup"
+	},
+	"untrack": {
+		"prefix": "ssutrck",
+		"body": "untrack(() => {\n\t$0\n});",
+		"description": "Untrack a reactive context"
+	},
+	"batch": {
+		"prefix": "ssbatch",
+		"body": "batch(() => {\n\t$0\n});",
+		"description": "Batch updates"
+	},
+	"on": {
+		"prefix": "ssron",
+		"body": "on($1, ($2) => {\n\t$0\n});",
+		"description": "Listen to an event"
+	},
+	"catchError": {
+		"prefix": "ssctch",
+		"body": "catchError(($1) => {\n\t$0\n});",
+		"description": "Catch errors in a reactive context"
+	},
+	"onError": {
+		"prefix": "ssonerr",
+		"body": "onError(($1) => {\n\t$0\n});",
+		"description": "Handle errors in a reactive context"
+	},
+	"createRoot": {
+		"prefix": "sscrroot",
+		"body": "createRoot(() => {\n\t$0\n});",
+		"description": "Create a root component"
+	},
+	"getOwner": {
+		"prefix": "ssgownr",
+		"body": "getOwner($1);",
+		"description": "Get the owner component"
+	},
+	"runWithOwner": {
+		"prefix": "ssrwo",
+		"body": "runWithOwner($1, () => {\n\t$0\n});",
+		"description": "Run with a specific owner"
+	},
+	"mergeProps": {
+		"prefix": "ssmrge",
+		"body": "mergeProps($1, $2, $3);",
+		"description": "Merge props from multiple sources"
+	},
+	"splitProps": {
+		"prefix": "sssplit",
+		"body": "splitProps($1, $2);",
+		"description": "Split props for composition"
+	},
+	"useTransition": {
+		"prefix": "ssutrans",
+		"body": "const $1 = useTransition();",
+		"description": "Use transitions for concurrent updates"
+	},
+	"startTransition": {
+		"prefix": "ssstrans",
+		"body": "startTransition(() => {\n\t$0\n});",
+		"description": "Start a concurrent update transition"
+	},
+	"observable": {
+		"prefix": "ssobsv",
+		"body": "const $1 = observable($2);",
+		"description": "Create an observable"
+	},
+	"from": {
+		"prefix": "ssfrom",
+		"body": "const $1 = from($2);",
+		"description": "Convert to an observable"
+	},
+	"mapArray": {
+		"prefix": "ssmaparr",
+		"body": "const $1 = mapArray($2, ($3) => {\n\t$4\n});",
+		"description": "Map an array of observables"
+	},
+	"indexArray": {
+		"prefix": "ssindarr",
+		"body": "const $1 = indexArray($2);",
+		"description": "Index an array of observables"
+	}
+}

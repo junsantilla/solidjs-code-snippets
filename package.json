@@ -1,0 +1,40 @@
+{
+	"name": "solidjs-code-snippets",
+	"displayName": "SolidJS Code Snippets",
+	"description": "Code snippets for SolidJS in JavaScript and TypeScript",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.81.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "javascript",
+				"extensions": [
+					".js",
+					".jsx"
+				]
+			},
+			{
+				"id": "typescript",
+				"extensions": [
+					".ts",
+					".tsx"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	}
+}
